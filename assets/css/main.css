@@ -1284,8 +1284,8 @@ input, select, textarea {
 			position: relative;
 			margin-top: 3.5rem;
 		}
-
-			#header > *:before {
+            /*uncomment this to add the lines back that go from your name to the buttons to the text */
+			/* #header > *:before {
 				content: '';
 				display: block;
 				position: absolute;
@@ -1294,7 +1294,7 @@ input, select, textarea {
 				width: 1px;
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
-			}
+			} */
 
 		#header > :first-child {
 			margin-top: 0;
