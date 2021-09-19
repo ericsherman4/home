@@ -757,6 +757,20 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
+        ul.alt1 {
+			list-style: none;
+			padding-left: 0;
+		}
+
+            ul.alt1 li {
+                padding: 0.8em 0;
+            }
+
+                ul.alt1 li:first-child {
+                    border-top: 0;
+                    padding-top: 0;
+                }
+
 	dl {
 		margin: 0 0 2rem 0;
 	}
@@ -1158,7 +1172,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/stack.jpg");
+			background-image: url("../../images/streak.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
