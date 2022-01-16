@@ -1,0 +1,9 @@
+Redo bio/ intro (and its a bit out of date)
+
+making a blog
+https://www.quora.com/Is-there-a-free-solution-to-add-a-blog-to-my-existing-website
+https://www.quora.com/What-are-the-steps-for-adding-a-blog-to-an-existing-HTML-template-based-website
+https://css-tricks.com/embed-a-blog-onto-any-website-with-dropinblog/
+https://gist.github.com/kristopherjohnson/2852290
+https://dev.to/anobjectisa/how-to-dynamically-load-markdown-files-in-react-markdown-to-jsx-53fl
+https://stackoverflow.com/questions/67865778/how-to-dynamically-import-markdown-files?rq=1

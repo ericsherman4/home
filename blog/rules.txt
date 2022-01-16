@@ -1,0 +1,10 @@
+Formatting
+1.  A newline character will start a new <p> tag.
+2.  If a path to an image is detected and it is a valid path, then it will be converted to html.
+    A blank line is required before and after the image URL.
+    The image URL must begin by accessing the image folder, i.e "images/path_to_image"
+3.  Number 2 also applies with videos.
+
+Input/Output
+1.  The input will be a plain text file.
+2.  The output will be an html file containing the converted html. The html file should be able to open in the browser with all of the styling included.
