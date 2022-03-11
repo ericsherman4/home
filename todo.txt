@@ -7,3 +7,5 @@ https://css-tricks.com/embed-a-blog-onto-any-website-with-dropinblog/
 https://gist.github.com/kristopherjohnson/2852290
 https://dev.to/anobjectisa/how-to-dynamically-load-markdown-files-in-react-markdown-to-jsx-53fl
 https://stackoverflow.com/questions/67865778/how-to-dynamically-import-markdown-files?rq=1
+
+use htaccess to get rid of html?

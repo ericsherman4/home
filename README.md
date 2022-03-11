@@ -1,2 +1,2 @@
 # Personal Website
-Find it here: https://ericsherman4.github.io/home/
+Find it here: wwww.eric-sherman.com
