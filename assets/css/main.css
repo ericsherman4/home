@@ -1153,13 +1153,11 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto,
- 256px 256px;
-			background-position: center,
- center;
-			background-repeat: no-repeat,
- repeat;
+            /* the line below actually lets u apply some cool affects */
+			/* background-image: linear-gradient(to top, rgba(85, 170, 170, 0.034), rgba(169, 175, 114, 0.253)), url("../../images/overlay.png"); */
+			background-size: auto, 256px 256px;
+			background-position: center, center;
+			background-repeat: no-repeat, repeat;
 			z-index: 2;
 		}
 
@@ -1298,6 +1296,8 @@ input, select, textarea {
 
 		#header > :first-child {
 			margin-top: 0;
+            /* background behind my name and inbetween the white lines */
+            /* background-color: rgba(0, 0, 0, 0.068);  */
 		}
 
 			#header > :first-child:before {
@@ -1380,10 +1380,13 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+                    /* background color of the buttons on the homepage */
+                    background-color: rgba(0, 0, 0, 0.336); 
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+                        /* color when ur mouse is over the button */
+						background-color: rgba(0, 0, 0, 0.568);
 					}
 
 					#header nav ul li a:active {
@@ -1443,7 +1446,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 770px) {
 
 			#header > * {
 				margin-top: 2rem;
@@ -1472,9 +1475,9 @@ input, select, textarea {
 				line-height: 1.875;
 			}
 
-		}
+		} */
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 800px) {
 
 			#header {
 				padding: 1.5rem 0;
