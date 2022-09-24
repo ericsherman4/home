@@ -4010,6 +4010,8 @@ input, select, textarea {
 	 
 
 
+/* All code below is from https://ihatetomatoes.net/create-custom-preloading-screen/ */
+/* Thanks mate. */
 
 /* 
  _____   _           _         _                        _                  
@@ -4040,13 +4042,6 @@ Enjoy responsibly!
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-p {
-    line-height: 1.33em;
-    color: #7E7E7E;
-}
-h1 {
-    color: #EEEEEE;
-}
 
 #loader-wrapper {
     position: fixed;
@@ -4066,7 +4061,7 @@ h1 {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #969696;
 
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -4083,7 +4078,7 @@ h1 {
         bottom: 5px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #e74c3c;
+        border-top-color: #ffffff;
 
         -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
         animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -4098,7 +4093,7 @@ h1 {
         bottom: 15px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #f9c922;
+        border-top-color: #6e6e6e;
 
         -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -4191,13 +4186,6 @@ h1 {
     .no-js h1 {
         color: #222222;
     }
-
-    #content {
-        margin: 0 auto;
-        padding-bottom: 50px;
-        width: 80%;
-        max-width: 978px;
-    }  
 
 
 

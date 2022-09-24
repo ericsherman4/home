@@ -1,3 +1,6 @@
+/* All code below is from https://ihatetomatoes.net/create-custom-preloading-screen/ */
+/* Thanks mate. */
+
 /* 
  _____   _           _         _                        _                  
 |_   _| | |         | |       | |                      | |                 
@@ -12,11 +15,11 @@ Enjoy responsibly!
 
 */
 
+// TODO need to add your own load thing here
 $(document).ready(function() {
 	
+	// Test animation locally with timeout 
 	setTimeout(function(){
 		$('body').addClass('loaded');
-		$('h1').css('color','#222222');
-	}, 3000);
-	
+	}, 1000);
 });
