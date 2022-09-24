@@ -25,5 +25,5 @@ $(document).ready(function() {
 		$('body').addClass('loaded');
 		//Make the loading text transparent
 		$("#loadtext").css("color", "transparent")
-	}, 1000);
+	}, 2000);
 });
