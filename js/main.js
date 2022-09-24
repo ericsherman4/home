@@ -1,4 +1,5 @@
-/* All code below is from https://ihatetomatoes.net/create-custom-preloading-screen/ */
+/* Code is mainly from https://ihatetomatoes.net/create-custom-preloading-screen/ 
+   but has slightly been modified*/
 /* Thanks mate. */
 
 /* 
@@ -18,8 +19,11 @@ Enjoy responsibly!
 // TODO need to add your own load thing here
 $(document).ready(function() {
 	
-	// Test animation locally with timeout 
+	// Wait x ms after the page has loaded to display the content
 	setTimeout(function(){
+		// Tell it that the document has loaded
 		$('body').addClass('loaded');
+		//Make the loading text transparent
+		$("#loadtext").css("color", "transparent")
 	}, 1000);
 });

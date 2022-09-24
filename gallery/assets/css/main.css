@@ -4051,6 +4051,18 @@ Enjoy responsibly!
     height: 100%;
     z-index: 1000;
 }
+
+#loadtext{
+    position: fixed;
+	text-align: center;
+    top: 60%;
+    width: 100%;
+    height: auto;
+	color: #ffffff;
+	background-color: transparent;
+	z-index:1006;
+}
+
 #loader {
     display: block;
     position: relative;
@@ -4060,7 +4072,7 @@ Enjoy responsibly!
     height: 150px;
     margin: -75px 0 0 -75px;
     border-radius: 50%;
-    border: 3px solid transparent;
+    border: 7px solid transparent;
     border-top-color: #969696;
 
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
@@ -4077,7 +4089,7 @@ Enjoy responsibly!
         right: 5px;
         bottom: 5px;
         border-radius: 50%;
-        border: 3px solid transparent;
+        border: 7px solid transparent;
         border-top-color: #ffffff;
 
         -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
@@ -4092,7 +4104,7 @@ Enjoy responsibly!
         right: 15px;
         bottom: 15px;
         border-radius: 50%;
-        border: 3px solid transparent;
+        border: 7px solid transparent;
         border-top-color: #6e6e6e;
 
         -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
