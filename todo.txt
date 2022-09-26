@@ -1,5 +1,3 @@
-Redo bio/ intro (and its a bit out of date)
-
 making a blog
 https://www.quora.com/Is-there-a-free-solution-to-add-a-blog-to-my-existing-website
 https://www.quora.com/What-are-the-steps-for-adding-a-blog-to-an-existing-HTML-template-based-website
