@@ -19,6 +19,10 @@ const animated = document.getElementById('loader');
 var animation_started = false;
 // var loader_loaded = false;
 
+let count=0;
+const uptoval = 10000;
+setInterval(update_counter,100);
+
 function thing(){
 	// Tell it that the document has loaded
 	$('body').addClass('loaded');
@@ -27,10 +31,17 @@ function thing(){
 }
 
 animated.addEventListener('animationstart', () => {
-  console.log('Animation started');
+//   console.log('Animation started');
 //   animation_started= true;
 	setTimeout(thing, 2000);
 });
+
+//https://www.geeksforgeeks.org/how-to-make-animated-counter-using-javascript/
+function update_counter(){
+	var counter= document.getElementById("counter");
+	count = count + 1
+	counter.innerHTML=count
+}
 
 
 // from https://www.nikitakazakov.com/js-wait-until-loaded-dom-element
