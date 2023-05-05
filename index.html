@@ -36,29 +36,16 @@
 			var redirecturl = "";
 			var redirectime = 1800;
 			var urlstring = window.location.search.substr(1);
-			// var keyvalue = urlstring.split("=");
-			// console.log(urlstring);
-			function redirect()
-			{
-				window.location.href = redirecturl;
-			}
-
-			if(urlstring == "linkedin")
-			{
-				value = "Forwarding to Linkedin .... "; 
-				redirecturl = "https://www.linkedin.com/in/ericsherman4/"
+			function redirect() { window.location.href = redirecturl; }
+			if(urlstring == "linkedin"){
+				value = "Forwarding to Linkedin .... "; redirecturl = "https://www.linkedin.com/in/ericsherman4/";
+				setTimeout(redirect, redirectime);
+			} else if(urlstring == "github") {
+				value = "Forwarding to github .... "; redirecturl = "https://github.com/ericsherman4";
 				setTimeout(redirect, redirectime);
 			}
-			else if(urlstring == "github")
-			{
-				value = "Forwarding to github .... "
-				redirecturl = "https://github.com/ericsherman4"
-				setTimeout(redirect, redirectime);
-			}
-
 		</script>
 
-		
 	</head>
 	<body class="is-preload">
 
@@ -72,7 +59,8 @@
 								<h1>Eric Sherman</h1>
 								<h3 id="message"></h3>
 							</div>
-							<script>
+							<script type="text/javascript">
+								// sets text under my name to be whatever is in gvar value
 								document.getElementById("message").innerHTML = value;
 							</script>
 						</div>
@@ -219,18 +207,44 @@
 								<h2>Accolades</h2>
 								<ul class="alt">
 									<li></li>
+
+									<li><b>2023 Outstanding Graduate in Computer Engineering</b></li>
+									<p>
+										Awarded to a single graduate in the department of Computer Engineering for outstanding academic achievements.
+										<br><i>(April 28th, 2023)</i>
+									</p>
+
+									<li><b>2023 George Washington Prize Runner Up</b></li>
+									<p> The George Washington prize is awarded by the Swanson School of Engineering to recognize   
+										"academic excellence, service, and leadership" and is presented at the Engineer's Society of
+										Western Pennsylvania annual awards banquet. Recipients receive a $500 cash prize and a $2500 Dean's Fellowship
+										towards pursuing graduate studies at Pitt. The presentation of the award can be found 
+										<a href="https://vimeo.com/808735291#t=633s">here</a>.
+										<br><i>(March 9th, 2023)</i>
+									</p>
+
+									<li><b>Dean's List and Dean's Honor List</b></li>
+									<p>Placed on Dean's list and Dean's Honor list for every semester thus far in the Swanson School of Engineering.
+										<br><i>(Aug 2019 - April 2023)</i>
+									</p> 
+
+									<li><b>2020 Summer Undergraduate Research Group (SURG) Expo Grand Prize Winner</b></li>
+									<p> Received highest award at the 2020 Summer Undergraduate Research Group (SURG) for my project and
+										presentation on a closed-loop stepper motor control system.
+										<br><i>(August 6th, 2020)</i>
+									</p> 
+
+									<li><b>University of Pittsburgh First Year Success Award</b></li>
+									<p>This award is handed to a few students who have showcased high levels of engagement on campus during 
+										their first semester at Pitt. 
+										<br><i>(February, 2019)</i>
+									</p>
+									
 									<li><b>2019 Tartanhacks Grand Prize Winner</b></li>
-									<p>Our team of four received the grand prize of $2000 at Tartanhacks, an annual Carnegie Mellon Hackathon, for a text to braille converter.</p>
-									<li><b>First Year Success Award</b></li>
-									<p>This award is handed to a few students who have showcased high levels of engagement on campus during their first semester at Pitt.</p>
-									<li><b>2020 SURG Expo Grand Prize</b></li>
-									<p>Received highest award at the 2020 Summer Undergraduate Research Group (SURG) for my project and
-										 presentation on a closed-loop stepper motor control system.</p>
-									<li><b>Honors Recognition from Swanson School of Engineering</b></li>
-									<p>Designated as an honor student within the school of engineering and placed on the Honors List and Dean's Honors List.</p>
-									<li><b>Dean's List</b></li>
-									<p>Placed on Dean's list for every semester thus far at Pitt.</p>
-									<li></li>
+									<p>Our team of four received the grand prize of $2000 at Tartanhacks, an annual Carnegie Mellon Hackathon, 
+										for a text to braille converter.
+										<br><i>(February 9th, 2019)</i>
+									</p>
 								</ul>
 
 							</article>
