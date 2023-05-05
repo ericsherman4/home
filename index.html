@@ -23,12 +23,42 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="images/Satellite/favicon-16x16.png">
 		<link rel="manifest" href="images/Satellite/site.webmanifest">
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LR9JVMMPK"></script>
-        <script>
+        
+		<script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-6LR9JVMMPK');
         </script>
+
+		<script type="text/javascript">
+			var value = "";
+			var redirecturl = "";
+			var redirectime = 1800;
+			var urlstring = window.location.search.substr(1);
+			// var keyvalue = urlstring.split("=");
+			// console.log(urlstring);
+			function redirect()
+			{
+				window.location.href = redirecturl;
+			}
+
+			if(urlstring == "linkedin")
+			{
+				value = "Forwarding to Linkedin .... "; 
+				redirecturl = "https://www.linkedin.com/in/ericsherman4/"
+				setTimeout(redirect, redirectime);
+			}
+			else if(urlstring == "github")
+			{
+				value = "Forwarding to github .... "
+				redirecturl = "https://github.com/ericsherman4"
+				setTimeout(redirect, redirectime);
+			}
+
+		</script>
+
+		
 	</head>
 	<body class="is-preload">
 
@@ -40,7 +70,11 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Eric Sherman</h1>
+								<h3 id="message"></h3>
 							</div>
+							<script>
+								document.getElementById("message").innerHTML = value;
+							</script>
 						</div>
 						<nav>
 							<ul>
@@ -532,8 +566,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										</ul>
 									</form>
 								</section>
-
-								
 
 							</article>
 
