@@ -23,12 +23,29 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="images/Satellite/favicon-16x16.png">
 		<link rel="manifest" href="images/Satellite/site.webmanifest">
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LR9JVMMPK"></script>
-        <script>
+        
+		<script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-6LR9JVMMPK');
         </script>
+
+		<script type="text/javascript">
+			var value = "";
+			var redirecturl = "";
+			var redirectime = 1800;
+			var urlstring = window.location.search.substr(1);
+			function redirect() { window.location.href = redirecturl; }
+			if(urlstring == "linkedin"){
+				value = "Forwarding to Linkedin .... "; redirecturl = "https://www.linkedin.com/in/ericsherman4/";
+				setTimeout(redirect, redirectime);
+			} else if(urlstring == "github") {
+				value = "Forwarding to github .... "; redirecturl = "https://github.com/ericsherman4";
+				setTimeout(redirect, redirectime);
+			}
+		</script>
+
 	</head>
 	<body class="is-preload">
 
@@ -40,15 +57,20 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Eric Sherman</h1>
+								<h3 id="message"></h3>
 							</div>
+							<script type="text/javascript">
+								// sets text under my name to be whatever is in gvar value
+								document.getElementById("message").innerHTML = value;
+							</script>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Bio</a></li>
+								<li><a href="#intro">About Me</a></li>
 								<li><a href="#work">Work</a></li>
 								<li><a href="#accolades">Accolades</a></li>
                                 <li><a href="#links">Link Tree</a></li>
-								<li><a href="#projects">Projects</a></li>
+								<!-- <li><a href="#projects">Projects</a></li> -->
                                 <li><a href="portfolio">Portfolio</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!-- <li><a href="#elements">Elements</a></li> -->
@@ -61,7 +83,7 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Bio</h2>
+								<h2 class="major">About me</h2>
 								<span class="image main"><img src="images/Headshots/Headshot1.png" alt="" /></span>
 								<h3>Overview</h3>
 								<p>I am currently working towards a Bachelors of Science in Computer Engineering at the University of Pittsburgh's Swanson School of Engineering, with a concentration 
@@ -83,11 +105,171 @@
 									I also have extensive experience in CAD and eCAD software such as Altium Designer, Fusion 360, LTSpice,
                                     and fabrication techniques such as 3D Printing, soldering, and populating PCBs using a stencil. &nbsp;At Loupe and SpaceX, I've been exposed to industrial automation technologies such as PLC and HMI 
                                     programming (Siemens TIA), working with 6 axis robot arms, panel design using EPLAN Pro Panel, and using machine vision (Cognex).</p>
+
+								<h3>Undergraduate Coursework and Internship Schedule</h3>
+								<p>Covers my entire 5 year undergraduate career which spans from August 2018 to August 2023.</p>
+								<div class="table-wrapper">
+									<table class="alt" style="font-size: 12.2px; font-weight: bold;">
+										<thead>
+											<tr>
+												<th>Date</th>
+												<th>Class 1</th>
+												<th>Class 2</th>
+												<th>Class 3</th>
+												<th>Class 4</th>
+												<th>Class 5</th>
+												<th>Class 6</th>
+												<th>Credits</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>FALL 2018</td>
+												<td>GENERAL CHEMISTRY 1</td>
+												<td>INTRO TO JAVA</td>
+												<td>CALCULUS 2</td>
+												<td>PHYSICS 1</td>
+												<td></td>
+												<td></td>
+												<td>15</td>
+											</tr>
+
+											<tr>
+												<td>SPRING 2019</td>
+												<td>GENERAL CHEMISTRY 2</td>
+												<td>SEMINAR IN COMPOSITION: SERVICE LEARNING</td>
+												<td>ENGINEERING ANALYSIS</td>
+												<td>PHYSICS 2</td>
+												<td>PHILOSOPHY OF SCIENCE</td>
+												<td></td>
+												<td>16</td>
+											</tr>
+
+											<tr>
+												<td>SUMMER 2019</td>
+												<td colspan="6" style="text-align: center;">FULL TIME INTERNSHIP @ NAVAL AIR WARFARE CENTER - AIRCRAFT DIVISION</td>
+												<td>0</td>
+											</tr>
+
+											<tr>
+												<td>FALL 2019</td>
+												<td>PEER TUTORING EXPERIENCE</td>
+												<td>LINEAR CIRCUITS AND SYSTEMS</td>
+												<td>DIGITAL CIRCUITS AND SYSTEMS</td>
+												<td>ECE PROBLEM SOLVING WITH C++</td>
+												<td>DIFFERENTIAL EQUATIONS, CALCULUS 3, LINEAR ALGEBRA</td>
+												<td>ENGINEERING COMPUTING</td>
+												<td>18</td>
+											</tr>
+
+											<tr>
+												<td>SPRING 2020</td>
+												<td>MICROELECTRONIC CIRCUITS</td>
+												<td>EMBEDDED PROCESSORS AND INTERFACING</td>
+												<td>DATA STRUCTURES AND ALGORITHMS</td>
+												<td>SIGNALS, SYSTEMS, AND PROBABILITY</td>
+												<td>INTRO TO PSYCHOLOGY</td>
+												<td></td>
+												<td>17</td>
+											</tr>
+
+											<tr>
+												<td>SUMMER 2020</td>
+												<td colspan="3" style="text-align: center;">FULL TIME INTERNSHIP @ GECKO ROBOTICS</td>
+												<td colspan="3" style="text-align: center;">PART TIME RESEARCH @ CENTER FOR SPACE, HIGH PERFORMANCE, AND RESILIENT COMPUTING 
+													<a href="https://iucrc.nsf.gov/centers/space-high-performance-and-resilient-computing/">(SHREC)</a>, SUMMER UNDERGRADUATE RESEARCH GROUP</td>
+												<td>0</td>
+											</tr>
+
+											<tr>
+												<td>FALL 2020</td>
+												<td colspan="3" style="text-align: center;">PART TIME INTERNSHIP @ GECKO ROBOTICS</td>
+												<td colspan="3" style="text-align: center;">PART TIME RESEARCH @ CENTER FOR SPACE, HIGH PERFORMANCE, AND RESILIENT COMPUTING , 
+													<a href="https://caspr.space/">CASPR PROJECT</a></td>
+												<td>0</td>
+											</tr>
+
+											<tr>
+												<td>SPRING 2021</td>
+												<td colspan="6" style="text-align: center;">FULL TIME INTERNSHIP @ TESLA</td>
+												<td>0</td>
+											</tr>
+
+											<tr>
+												<td>SUMMER 2021</td>
+												<td colspan="6" style="text-align: center;">FULL TIME INTERNSHIP @ SPACEX</td>
+												<td>0</td>
+											</tr>
+
+											<tr>
+												<td>FALL 2021</td>
+												<td>COMPUTER ORG AND ARCHITECTURE</td>
+												<td>COMPUTER NETWORKS</td>
+												<td>EMBEDDED SYSTEMS DESIGN</td>
+												<td>MECHATRONIC SYSTEMS</td>
+												<td>INTRO TO MARCOECONOMIC THEORY</td>
+												<td></td>
+												<td>17</td>
+											</tr>
+
+											<tr>
+												<td>SPRING 2022</td>
+												<td>PART TIME INTERNSHIP @ LOUPE</td>
+												<td>COMPUTATIONAL MODELING AND SIMULATION</td>
+												<td>SPECIAL TOPICS: ROBOTICS</td>
+												<td>LINEAR CONTROL SYSTEMS</td>
+												<td>WRITTEN PROFESSIONAL COMMUNICATION</td>
+												<td>APPLIED DISCRETE MATHEMATICS</td>
+												<td>14</td>
+											</tr>
+
+											<tr>
+												<td>SUMMER 2022</td>
+												<td colspan="6" style="text-align: center;">FULL TIME INTERNSHIP @ GECKO ROBOTICS</td>
+												<td>0</td>
+											</tr>
+
+											<tr>
+												<td>FALL 2022</td>
+												<td>ADVANCED DIGITAL DESIGN</td>
+												<td>JUNIOR DESIGN FUNDAMENTALS</td>
+												<td>ENGINEERING PROJECT</td>
+												<td>LINEAR SYSTEM THEORY</td>
+												<td>OPTIMAL CONTROL</td>
+												<td>GAME THEORY PRINCIPLES</td>
+												<td>18</td>
+											</tr>
+
+											<tr>
+												<td>SPRING 2023</td>
+												<td>SENIOR DESIGN PROJECT</td>
+												<td>CYBER-PHYSICAL SYSTEMS</td>
+												<td>ROBOTIC CONTROL</td>
+												<td>SPACE, TIME, AND MATTER</td>
+												<td>MESOAMERICA BEFORE CORTEZ</td>
+												<td></td>
+												<td>16</td>
+											</tr>
+
+											<tr>
+												<td>SUMMER 2023</td>
+												<td>SYSTEMS AND PROJECT ENGINEERING</td>
+												<td>INFORMATION SECURITY</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td>7</td>
+											</tr>
+										</tbody>
+									</table>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
-								<h2>Work</h2>
+								<h2 class="major">Work</h2>
+								<!-- <hr> -->
+									<p>Internship schedule can be found at the bottom of the "About Me" section.</p>
 									<ul class="alt">
 										<li></li>
                                         <li><b><a href="https://www.geckorobotics.com/" target="_blank">Gecko Robotics</a> - Electrical Engineering Intern</b></li>
@@ -128,17 +310,46 @@
 								<h2>Accolades</h2>
 								<ul class="alt">
 									<li></li>
+
+									<li><b>2023 Outstanding Graduate in Computer Engineering</b></li>
+									<p>
+										Awarded to a single graduate in the department of Computer Engineering for outstanding academic achievements.
+										<br><i>(April 28th, 2023)</i>
+									</p>
+
+									<li><b>2023 George Washington Prize Runner Up</b></li>
+									<p> The George Washington prize is awarded by the Swanson School of Engineering to recognize   
+										"academic excellence, service, and leadership" and is presented at the Engineer's Society of
+										Western Pennsylvania annual awards banquet. Recipients receive a $500 cash prize and a $2500 Dean's Fellowship
+										towards pursuing graduate studies at Pitt.
+										<br>
+										<a href="https://vimeo.com/808735291#t=710s">Award Presentation at the Banquet Video</a> | <a href="https://youtu.be/-ryfc-SkV7o?t=188">Award Nominations Video</a>
+										<br><i>(March 9th, 2023)</i>
+									</p>
+
+									<li><b>Dean's List and Dean's Honor List</b></li>
+									<p>Placed on Dean's list and Dean's Honor list for every semester thus far in the Swanson School of Engineering.
+										<br><i>(Aug 2019 - April 2023)</i>
+									</p> 
+
+									<li><b>2020 SURG Expo Grand Prize Winner</b></li>
+									<p> Received highest award at the 2020 Summer Undergraduate Research Group (SURG) for my project and
+										presentation on a closed-loop stepper motor control system.
+										<br><i>(August 6th, 2020)</i>
+									</p> 
+
+									<li><b>University of Pittsburgh First Year Success Award</b></li>
+									<p>This award is handed to a few students who have showcased high levels of engagement on campus during 
+										their first semester at Pitt. 
+										<br><i>(February, 2019)</i>
+									</p>
+									
 									<li><b>2019 Tartanhacks Grand Prize Winner</b></li>
-									<p>Our team of four received the grand prize of $2000 at Tartanhacks, an annual Carnegie Mellon Hackathon, for a text to braille converter.</p>
-									<li><b>First Year Success Award</b></li>
-									<p>This award is handed to a few students who have showcased high levels of engagement on campus during their first semester at Pitt.</p>
-									<li><b>2020 SURG Expo Grand Prize</b></li>
-									<p>Received highest award at the 2020 Summer Undergraduate Research Group (SURG) for my project and
-										 presentation on a closed-loop stepper motor control system.</p>
-									<li><b>Honors Recognition from Swanson School of Engineering</b></li>
-									<p>Designated as an honor student within the school of engineering and placed on the Honors List and Dean's Honors List.</p>
-									<li><b>Dean's List</b></li>
-									<p>Placed on Dean's list for every semester thus far at Pitt.</p>
+									<p>Our team of four received the grand prize of $2000 at Tartanhacks, an annual Carnegie Mellon Hackathon, 
+										for a text to braille converter.
+										<br><i>(February 9th, 2019)</i>
+									</p>
+
 									<li></li>
 								</ul>
 
@@ -209,7 +420,7 @@
                             </article>
 
 						<!-- About -->
-							<article id="projects">
+							<!-- <article id="projects">
 								<h2 class="major">Projects</h2>
 								<span class="image main"><img src="images/egLogo.jpeg" alt="" /></span>
 								<p><b>Futori Six-Axis Robot Arm</b>. I'm working on a 3D printed, mini-industrial robot arm with gearboxes, stepper motors, bearings, and belt drives all incorporated into the build. I soldered and wired thumb joysticks onto a protoboard to control the robot's motion and programmed it using C++ on an Arduino.
@@ -218,7 +429,7 @@
 								<p><b>TartanHacks Hackathon</b>. At Carnegie Mellon University in 2019, my team was awarded the <i>ScottyLab&apos;s Grand Prize</i> for designing and building a text-to-braille converter in under 24 hours. You can check more out about <a href="#links">here.</a></p>
                                 <p></p>
                                 <p><b>Interview Prep Guide</b>. Created an interview guide covering behavioral questions all the way to advanced technical questions. Topics focused on PCB design, basic electrical engineering questions, coding questions, embedded systems questions, and more. Included in the guide are 70+ real interview questions and a 40+ page answer key! Please contact me if you would like to request a copy.</p>
-							</article>
+							</article> -->
 
                         <!-- portfolio -->
                             <article id="portfolio">
